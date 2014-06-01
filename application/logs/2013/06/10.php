@@ -1,0 +1,386 @@
+<?php defined('SYSPATH') OR die('No direct script access.'); ?>
+
+2013-06-10 04:20:03 --- CRITICAL: ErrorException [ 8 ]: Undefined offset: 0 ~ APPPATH\views\templates\admin\rev_edit.php [ 81 ] in Z:\home\app-loud.test\www\application\views\templates\admin\rev_edit.php:81
+2013-06-10 04:20:03 --- DEBUG: #0 Z:\home\app-loud.test\www\application\views\templates\admin\rev_edit.php(81): Kohana_Core::error_handler(8, 'Undefined offse...', 'Z:\home\app-lou...', 81, Array)
+#1 Z:\home\app-loud.test\www\system\classes\Kohana\View.php(61): include('Z:\home\app-lou...')
+#2 Z:\home\app-loud.test\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\app-lou...', Array)
+#3 Z:\home\app-loud.test\www\system\classes\Kohana\View.php(228): Kohana_View->render()
+#4 Z:\home\app-loud.test\www\application\classes\Controller\admin\Review.php(61): Kohana_View->__toString()
+#5 Z:\home\app-loud.test\www\system\classes\Kohana\Controller.php(84): Controller_Admin_Review->action_edit()
+#6 [internal function]: Kohana_Controller->execute()
+#7 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Review))
+#8 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#9 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#10 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#11 {main} in Z:\home\app-loud.test\www\application\views\templates\admin\rev_edit.php:81
+2013-06-10 07:24:06 --- CRITICAL: ErrorException [ 8 ]: Undefined offset: 2 ~ APPPATH\views\templates\admin\img_edit.php [ 8 ] in Z:\home\app-loud.test\www\application\views\templates\admin\img_edit.php:8
+2013-06-10 07:24:06 --- DEBUG: #0 Z:\home\app-loud.test\www\application\views\templates\admin\img_edit.php(8): Kohana_Core::error_handler(8, 'Undefined offse...', 'Z:\home\app-lou...', 8, Array)
+#1 Z:\home\app-loud.test\www\system\classes\Kohana\View.php(61): include('Z:\home\app-lou...')
+#2 Z:\home\app-loud.test\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\app-lou...', Array)
+#3 Z:\home\app-loud.test\www\system\classes\Kohana\View.php(228): Kohana_View->render()
+#4 Z:\home\app-loud.test\www\application\views\templates\admin\rev_edit.php(43): Kohana_View->__toString()
+#5 Z:\home\app-loud.test\www\system\classes\Kohana\View.php(61): include('Z:\home\app-lou...')
+#6 Z:\home\app-loud.test\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\app-lou...', Array)
+#7 Z:\home\app-loud.test\www\system\classes\Kohana\View.php(228): Kohana_View->render()
+#8 Z:\home\app-loud.test\www\application\classes\Controller\admin\Review.php(62): Kohana_View->__toString()
+#9 Z:\home\app-loud.test\www\system\classes\Kohana\Controller.php(84): Controller_Admin_Review->action_edit()
+#10 [internal function]: Kohana_Controller->execute()
+#11 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Review))
+#12 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#13 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#14 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#15 {main} in Z:\home\app-loud.test\www\application\views\templates\admin\img_edit.php:8
+2013-06-10 07:41:16 --- CRITICAL: ErrorException [ 2 ]: move_uploaded_file(/var/www/uploads/COxmgeVFarw.jpg) [function.move-uploaded-file]: failed to open stream: No such file or directory ~ APPPATH\classes\Controller\admin\upload.php [ 11 ] in :
+2013-06-10 07:41:16 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'move_uploaded_f...', 'Z:\home\app-lou...', 11, Array)
+#1 Z:\home\app-loud.test\www\application\classes\Controller\admin\upload.php(11): move_uploaded_file('Z:\tmp\phpAD0D....', '/var/www/upload...')
+#2 Z:\home\app-loud.test\www\system\classes\Kohana\Controller.php(84): Controller_Admin_Upload->action_index()
+#3 [internal function]: Kohana_Controller->execute()
+#4 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Upload))
+#5 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#7 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#8 {main} in :
+2013-06-10 08:00:17 --- CRITICAL: ErrorException [ 2 ]: move_uploaded_file(/var/www/uploads/COxmgeVFarw.jpg) [function.move-uploaded-file]: failed to open stream: No such file or directory ~ APPPATH\classes\Controller\admin\upload.php [ 11 ] in :
+2013-06-10 08:00:17 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'move_uploaded_f...', 'Z:\home\app-lou...', 11, Array)
+#1 Z:\home\app-loud.test\www\application\classes\Controller\admin\upload.php(11): move_uploaded_file('Z:\tmp\php142A....', '/var/www/upload...')
+#2 Z:\home\app-loud.test\www\system\classes\Kohana\Controller.php(84): Controller_Admin_Upload->action_index()
+#3 [internal function]: Kohana_Controller->execute()
+#4 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Upload))
+#5 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#7 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#8 {main} in :
+2013-06-10 08:12:09 --- CRITICAL: ErrorException [ 2 ]: fopen() [function.fopen]: Filename cannot be empty ~ SYSPATH\classes\Kohana\Response.php [ 453 ] in :
+2013-06-10 08:12:09 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'fopen() [<a hre...', 'Z:\home\app-lou...', 453, Array)
+#1 Z:\home\app-loud.test\www\system\classes\Kohana\Response.php(453): fopen('', 'rb')
+#2 Z:\home\app-loud.test\www\application\classes\Controller\Images.php(35): Kohana_Response->send_file('Z:\home\app-lou...', 'img2.jpg')
+#3 Z:\home\app-loud.test\www\system\classes\Kohana\Controller.php(84): Controller_Images->action_list()
+#4 [internal function]: Kohana_Controller->execute()
+#5 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Images))
+#6 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#9 {main} in :
+2013-06-10 08:12:09 --- CRITICAL: ErrorException [ 2 ]: fopen() [function.fopen]: Filename cannot be empty ~ SYSPATH\classes\Kohana\Response.php [ 453 ] in :
+2013-06-10 08:12:09 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'fopen() [<a hre...', 'Z:\home\app-lou...', 453, Array)
+#1 Z:\home\app-loud.test\www\system\classes\Kohana\Response.php(453): fopen('', 'rb')
+#2 Z:\home\app-loud.test\www\application\classes\Controller\Images.php(35): Kohana_Response->send_file('Z:\home\app-lou...', 'img1.jpg')
+#3 Z:\home\app-loud.test\www\system\classes\Kohana\Controller.php(84): Controller_Images->action_list()
+#4 [internal function]: Kohana_Controller->execute()
+#5 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Images))
+#6 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#9 {main} in :
+2013-06-10 08:12:09 --- CRITICAL: ErrorException [ 2 ]: fopen() [function.fopen]: Filename cannot be empty ~ SYSPATH\classes\Kohana\Response.php [ 453 ] in :
+2013-06-10 08:12:09 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'fopen() [<a hre...', 'Z:\home\app-lou...', 453, Array)
+#1 Z:\home\app-loud.test\www\system\classes\Kohana\Response.php(453): fopen('', 'rb')
+#2 Z:\home\app-loud.test\www\application\classes\Controller\Images.php(18): Kohana_Response->send_file('Z:\home\app-lou...', 'icon-4.png')
+#3 Z:\home\app-loud.test\www\system\classes\Kohana\Controller.php(84): Controller_Images->action_icon()
+#4 [internal function]: Kohana_Controller->execute()
+#5 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Images))
+#6 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#9 {main} in :
+2013-06-10 08:12:27 --- CRITICAL: ErrorException [ 2 ]: fopen() [function.fopen]: Filename cannot be empty ~ SYSPATH\classes\Kohana\Response.php [ 453 ] in :
+2013-06-10 08:12:27 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'fopen() [<a hre...', 'Z:\home\app-lou...', 453, Array)
+#1 Z:\home\app-loud.test\www\system\classes\Kohana\Response.php(453): fopen('', 'rb')
+#2 Z:\home\app-loud.test\www\application\classes\Controller\Images.php(35): Kohana_Response->send_file('Z:\home\app-lou...', 'img1.jpg')
+#3 Z:\home\app-loud.test\www\system\classes\Kohana\Controller.php(84): Controller_Images->action_list()
+#4 [internal function]: Kohana_Controller->execute()
+#5 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Images))
+#6 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#9 {main} in :
+2013-06-10 08:13:01 --- CRITICAL: ErrorException [ 2 ]: fopen() [function.fopen]: Filename cannot be empty ~ SYSPATH\classes\Kohana\Response.php [ 453 ] in :
+2013-06-10 08:13:01 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'fopen() [<a hre...', 'Z:\home\app-lou...', 453, Array)
+#1 Z:\home\app-loud.test\www\system\classes\Kohana\Response.php(453): fopen('', 'rb')
+#2 Z:\home\app-loud.test\www\application\classes\Controller\Images.php(18): Kohana_Response->send_file('Z:\home\app-lou...', 'icon-4.png')
+#3 Z:\home\app-loud.test\www\system\classes\Kohana\Controller.php(84): Controller_Images->action_icon()
+#4 [internal function]: Kohana_Controller->execute()
+#5 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Images))
+#6 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#9 {main} in :
+2013-06-10 08:13:01 --- CRITICAL: ErrorException [ 2 ]: fopen() [function.fopen]: Filename cannot be empty ~ SYSPATH\classes\Kohana\Response.php [ 453 ] in :
+2013-06-10 08:13:01 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'fopen() [<a hre...', 'Z:\home\app-lou...', 453, Array)
+#1 Z:\home\app-loud.test\www\system\classes\Kohana\Response.php(453): fopen('', 'rb')
+#2 Z:\home\app-loud.test\www\application\classes\Controller\Images.php(18): Kohana_Response->send_file('Z:\home\app-lou...', 'icon-13.png')
+#3 Z:\home\app-loud.test\www\system\classes\Kohana\Controller.php(84): Controller_Images->action_icon()
+#4 [internal function]: Kohana_Controller->execute()
+#5 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Images))
+#6 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#9 {main} in :
+2013-06-10 08:13:02 --- CRITICAL: ErrorException [ 2 ]: fopen() [function.fopen]: Filename cannot be empty ~ SYSPATH\classes\Kohana\Response.php [ 453 ] in :
+2013-06-10 08:13:02 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'fopen() [<a hre...', 'Z:\home\app-lou...', 453, Array)
+#1 Z:\home\app-loud.test\www\system\classes\Kohana\Response.php(453): fopen('', 'rb')
+#2 Z:\home\app-loud.test\www\application\classes\Controller\Images.php(18): Kohana_Response->send_file('Z:\home\app-lou...', 'icon-9.png')
+#3 Z:\home\app-loud.test\www\system\classes\Kohana\Controller.php(84): Controller_Images->action_icon()
+#4 [internal function]: Kohana_Controller->execute()
+#5 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Images))
+#6 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#9 {main} in :
+2013-06-10 08:13:02 --- CRITICAL: ErrorException [ 2 ]: fopen() [function.fopen]: Filename cannot be empty ~ SYSPATH\classes\Kohana\Response.php [ 453 ] in :
+2013-06-10 08:13:02 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'fopen() [<a hre...', 'Z:\home\app-lou...', 453, Array)
+#1 Z:\home\app-loud.test\www\system\classes\Kohana\Response.php(453): fopen('', 'rb')
+#2 Z:\home\app-loud.test\www\application\classes\Controller\Images.php(18): Kohana_Response->send_file('Z:\home\app-lou...', 'icon-6.png')
+#3 Z:\home\app-loud.test\www\system\classes\Kohana\Controller.php(84): Controller_Images->action_icon()
+#4 [internal function]: Kohana_Controller->execute()
+#5 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Images))
+#6 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#9 {main} in :
+2013-06-10 08:13:02 --- CRITICAL: ErrorException [ 2 ]: fopen() [function.fopen]: Filename cannot be empty ~ SYSPATH\classes\Kohana\Response.php [ 453 ] in :
+2013-06-10 08:13:02 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'fopen() [<a hre...', 'Z:\home\app-lou...', 453, Array)
+#1 Z:\home\app-loud.test\www\system\classes\Kohana\Response.php(453): fopen('', 'rb')
+#2 Z:\home\app-loud.test\www\application\classes\Controller\Images.php(18): Kohana_Response->send_file('Z:\home\app-lou...', 'icon-8.png')
+#3 Z:\home\app-loud.test\www\system\classes\Kohana\Controller.php(84): Controller_Images->action_icon()
+#4 [internal function]: Kohana_Controller->execute()
+#5 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Images))
+#6 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#9 {main} in :
+2013-06-10 08:13:02 --- CRITICAL: ErrorException [ 2 ]: fopen() [function.fopen]: Filename cannot be empty ~ SYSPATH\classes\Kohana\Response.php [ 453 ] in :
+2013-06-10 08:13:02 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'fopen() [<a hre...', 'Z:\home\app-lou...', 453, Array)
+#1 Z:\home\app-loud.test\www\system\classes\Kohana\Response.php(453): fopen('', 'rb')
+#2 Z:\home\app-loud.test\www\application\classes\Controller\Images.php(18): Kohana_Response->send_file('Z:\home\app-lou...', 'icon-12.png')
+#3 Z:\home\app-loud.test\www\system\classes\Kohana\Controller.php(84): Controller_Images->action_icon()
+#4 [internal function]: Kohana_Controller->execute()
+#5 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Images))
+#6 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#9 {main} in :
+2013-06-10 08:13:02 --- CRITICAL: ErrorException [ 2 ]: fopen() [function.fopen]: Filename cannot be empty ~ SYSPATH\classes\Kohana\Response.php [ 453 ] in :
+2013-06-10 08:13:02 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'fopen() [<a hre...', 'Z:\home\app-lou...', 453, Array)
+#1 Z:\home\app-loud.test\www\system\classes\Kohana\Response.php(453): fopen('', 'rb')
+#2 Z:\home\app-loud.test\www\application\classes\Controller\Images.php(18): Kohana_Response->send_file('Z:\home\app-lou...', 'icon-15.png')
+#3 Z:\home\app-loud.test\www\system\classes\Kohana\Controller.php(84): Controller_Images->action_icon()
+#4 [internal function]: Kohana_Controller->execute()
+#5 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Images))
+#6 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#9 {main} in :
+2013-06-10 08:13:02 --- CRITICAL: ErrorException [ 2 ]: fopen() [function.fopen]: Filename cannot be empty ~ SYSPATH\classes\Kohana\Response.php [ 453 ] in :
+2013-06-10 08:13:02 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'fopen() [<a hre...', 'Z:\home\app-lou...', 453, Array)
+#1 Z:\home\app-loud.test\www\system\classes\Kohana\Response.php(453): fopen('', 'rb')
+#2 Z:\home\app-loud.test\www\application\classes\Controller\Images.php(18): Kohana_Response->send_file('Z:\home\app-lou...', 'icon-16.png')
+#3 Z:\home\app-loud.test\www\system\classes\Kohana\Controller.php(84): Controller_Images->action_icon()
+#4 [internal function]: Kohana_Controller->execute()
+#5 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Images))
+#6 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#9 {main} in :
+2013-06-10 08:13:03 --- CRITICAL: ErrorException [ 2 ]: fopen() [function.fopen]: Filename cannot be empty ~ SYSPATH\classes\Kohana\Response.php [ 453 ] in :
+2013-06-10 08:13:03 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'fopen() [<a hre...', 'Z:\home\app-lou...', 453, Array)
+#1 Z:\home\app-loud.test\www\system\classes\Kohana\Response.php(453): fopen('', 'rb')
+#2 Z:\home\app-loud.test\www\application\classes\Controller\Images.php(18): Kohana_Response->send_file('Z:\home\app-lou...', 'icon-17.png')
+#3 Z:\home\app-loud.test\www\system\classes\Kohana\Controller.php(84): Controller_Images->action_icon()
+#4 [internal function]: Kohana_Controller->execute()
+#5 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Images))
+#6 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#9 {main} in :
+2013-06-10 08:13:03 --- CRITICAL: ErrorException [ 2 ]: fopen() [function.fopen]: Filename cannot be empty ~ SYSPATH\classes\Kohana\Response.php [ 453 ] in :
+2013-06-10 08:13:03 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'fopen() [<a hre...', 'Z:\home\app-lou...', 453, Array)
+#1 Z:\home\app-loud.test\www\system\classes\Kohana\Response.php(453): fopen('', 'rb')
+#2 Z:\home\app-loud.test\www\application\classes\Controller\Images.php(18): Kohana_Response->send_file('Z:\home\app-lou...', 'icon-14.png')
+#3 Z:\home\app-loud.test\www\system\classes\Kohana\Controller.php(84): Controller_Images->action_icon()
+#4 [internal function]: Kohana_Controller->execute()
+#5 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Images))
+#6 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#9 {main} in :
+2013-06-10 08:13:03 --- CRITICAL: ErrorException [ 2 ]: fopen() [function.fopen]: Filename cannot be empty ~ SYSPATH\classes\Kohana\Response.php [ 453 ] in :
+2013-06-10 08:13:03 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'fopen() [<a hre...', 'Z:\home\app-lou...', 453, Array)
+#1 Z:\home\app-loud.test\www\system\classes\Kohana\Response.php(453): fopen('', 'rb')
+#2 Z:\home\app-loud.test\www\application\classes\Controller\Images.php(18): Kohana_Response->send_file('Z:\home\app-lou...', 'icon-7.png')
+#3 Z:\home\app-loud.test\www\system\classes\Kohana\Controller.php(84): Controller_Images->action_icon()
+#4 [internal function]: Kohana_Controller->execute()
+#5 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Images))
+#6 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#9 {main} in :
+2013-06-10 08:13:03 --- CRITICAL: ErrorException [ 2 ]: fopen() [function.fopen]: Filename cannot be empty ~ SYSPATH\classes\Kohana\Response.php [ 453 ] in :
+2013-06-10 08:13:03 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'fopen() [<a hre...', 'Z:\home\app-lou...', 453, Array)
+#1 Z:\home\app-loud.test\www\system\classes\Kohana\Response.php(453): fopen('', 'rb')
+#2 Z:\home\app-loud.test\www\application\classes\Controller\Images.php(18): Kohana_Response->send_file('Z:\home\app-lou...', 'icon-5.png')
+#3 Z:\home\app-loud.test\www\system\classes\Kohana\Controller.php(84): Controller_Images->action_icon()
+#4 [internal function]: Kohana_Controller->execute()
+#5 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Images))
+#6 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#9 {main} in :
+2013-06-10 08:13:03 --- CRITICAL: ErrorException [ 2 ]: fopen() [function.fopen]: Filename cannot be empty ~ SYSPATH\classes\Kohana\Response.php [ 453 ] in :
+2013-06-10 08:13:03 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'fopen() [<a hre...', 'Z:\home\app-lou...', 453, Array)
+#1 Z:\home\app-loud.test\www\system\classes\Kohana\Response.php(453): fopen('', 'rb')
+#2 Z:\home\app-loud.test\www\application\classes\Controller\Images.php(18): Kohana_Response->send_file('Z:\home\app-lou...', 'icon-10.png')
+#3 Z:\home\app-loud.test\www\system\classes\Kohana\Controller.php(84): Controller_Images->action_icon()
+#4 [internal function]: Kohana_Controller->execute()
+#5 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Images))
+#6 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#9 {main} in :
+2013-06-10 08:13:03 --- CRITICAL: ErrorException [ 2 ]: fopen() [function.fopen]: Filename cannot be empty ~ SYSPATH\classes\Kohana\Response.php [ 453 ] in :
+2013-06-10 08:13:03 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'fopen() [<a hre...', 'Z:\home\app-lou...', 453, Array)
+#1 Z:\home\app-loud.test\www\system\classes\Kohana\Response.php(453): fopen('', 'rb')
+#2 Z:\home\app-loud.test\www\application\classes\Controller\Images.php(18): Kohana_Response->send_file('Z:\home\app-lou...', 'icon-1.png')
+#3 Z:\home\app-loud.test\www\system\classes\Kohana\Controller.php(84): Controller_Images->action_icon()
+#4 [internal function]: Kohana_Controller->execute()
+#5 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Images))
+#6 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#9 {main} in :
+2013-06-10 08:13:03 --- CRITICAL: ErrorException [ 2 ]: fopen() [function.fopen]: Filename cannot be empty ~ SYSPATH\classes\Kohana\Response.php [ 453 ] in :
+2013-06-10 08:13:03 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'fopen() [<a hre...', 'Z:\home\app-lou...', 453, Array)
+#1 Z:\home\app-loud.test\www\system\classes\Kohana\Response.php(453): fopen('', 'rb')
+#2 Z:\home\app-loud.test\www\application\classes\Controller\Images.php(18): Kohana_Response->send_file('Z:\home\app-lou...', 'icon-2.png')
+#3 Z:\home\app-loud.test\www\system\classes\Kohana\Controller.php(84): Controller_Images->action_icon()
+#4 [internal function]: Kohana_Controller->execute()
+#5 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Images))
+#6 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#9 {main} in :
+2013-06-10 08:13:14 --- CRITICAL: ErrorException [ 2 ]: fopen() [function.fopen]: Filename cannot be empty ~ SYSPATH\classes\Kohana\Response.php [ 453 ] in :
+2013-06-10 08:13:14 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'fopen() [<a hre...', 'Z:\home\app-lou...', 453, Array)
+#1 Z:\home\app-loud.test\www\system\classes\Kohana\Response.php(453): fopen('', 'rb')
+#2 Z:\home\app-loud.test\www\application\classes\Controller\Images.php(18): Kohana_Response->send_file('Z:\home\app-lou...', 'icon-4.png')
+#3 Z:\home\app-loud.test\www\system\classes\Kohana\Controller.php(84): Controller_Images->action_icon()
+#4 [internal function]: Kohana_Controller->execute()
+#5 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Images))
+#6 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#8 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#9 {main} in :
+2013-06-10 08:27:04 --- CRITICAL: Kohana_Exception [ 0 ]: Controller failed to return a Response ~ SYSPATH\classes\Kohana\Request\Client\Internal.php [ 102 ] in Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php:114
+2013-06-10 08:27:04 --- DEBUG: #0 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#1 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#2 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#3 {main} in Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php:114
+2013-06-10 08:28:08 --- CRITICAL: Kohana_Exception [ 0 ]: Controller failed to return a Response ~ SYSPATH\classes\Kohana\Request\Client\Internal.php [ 102 ] in Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php:114
+2013-06-10 08:28:08 --- DEBUG: #0 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#1 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#2 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#3 {main} in Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php:114
+2013-06-10 08:32:52 --- CRITICAL: Kohana_Exception [ 0 ]: Controller failed to return a Response ~ SYSPATH\classes\Kohana\Request\Client\Internal.php [ 102 ] in Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php:114
+2013-06-10 08:32:52 --- DEBUG: #0 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#1 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#2 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#3 {main} in Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php:114
+2013-06-10 08:36:48 --- CRITICAL: ErrorException [ 4 ]: syntax error, unexpected '}' ~ APPPATH\classes\Controller\admin\upload.php [ 10 ] in :
+2013-06-10 08:36:48 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in :
+2013-06-10 09:08:19 --- CRITICAL: ErrorException [ 8 ]: Undefined variable: i ~ APPPATH\views\templates\admin\img_edit.php [ 2 ] in Z:\home\app-loud.test\www\application\views\templates\admin\img_edit.php:2
+2013-06-10 09:08:19 --- DEBUG: #0 Z:\home\app-loud.test\www\application\views\templates\admin\img_edit.php(2): Kohana_Core::error_handler(8, 'Undefined varia...', 'Z:\home\app-lou...', 2, Array)
+#1 Z:\home\app-loud.test\www\system\classes\Kohana\View.php(61): include('Z:\home\app-lou...')
+#2 Z:\home\app-loud.test\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\app-lou...', Array)
+#3 Z:\home\app-loud.test\www\system\classes\Kohana\View.php(228): Kohana_View->render()
+#4 Z:\home\app-loud.test\www\application\views\templates\admin\rev_edit.php(43): Kohana_View->__toString()
+#5 Z:\home\app-loud.test\www\system\classes\Kohana\View.php(61): include('Z:\home\app-lou...')
+#6 Z:\home\app-loud.test\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\app-lou...', Array)
+#7 Z:\home\app-loud.test\www\system\classes\Kohana\View.php(228): Kohana_View->render()
+#8 Z:\home\app-loud.test\www\application\classes\Controller\admin\Review.php(64): Kohana_View->__toString()
+#9 Z:\home\app-loud.test\www\system\classes\Kohana\Controller.php(84): Controller_Admin_Review->action_edit()
+#10 [internal function]: Kohana_Controller->execute()
+#11 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Review))
+#12 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#13 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#14 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#15 {main} in Z:\home\app-loud.test\www\application\views\templates\admin\img_edit.php:2
+2013-06-10 13:26:41 --- CRITICAL: ErrorException [ 8 ]: Undefined index: file ~ APPPATH\classes\Controller\admin\Review.php [ 222 ] in Z:\home\app-loud.test\www\application\classes\Controller\admin\Review.php:222
+2013-06-10 13:26:41 --- DEBUG: #0 Z:\home\app-loud.test\www\application\classes\Controller\admin\Review.php(222): Kohana_Core::error_handler(8, 'Undefined index...', 'Z:\home\app-lou...', 222, Array)
+#1 Z:\home\app-loud.test\www\system\classes\Kohana\Controller.php(84): Controller_Admin_Review->action_uploadimg()
+#2 [internal function]: Kohana_Controller->execute()
+#3 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Review))
+#4 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#6 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#7 {main} in Z:\home\app-loud.test\www\application\classes\Controller\admin\Review.php:222
+2013-06-10 13:51:29 --- CRITICAL: ErrorException [ 2 ]: mkdir() [function.mkdir]: File exists ~ APPPATH\classes\Controller\admin\Review.php [ 36 ] in :
+2013-06-10 13:51:29 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'mkdir() [<a hre...', 'Z:\home\app-lou...', 36, Array)
+#1 Z:\home\app-loud.test\www\application\classes\Controller\admin\Review.php(36): mkdir('Z:\home\app-lou...')
+#2 Z:\home\app-loud.test\www\system\classes\Kohana\Controller.php(84): Controller_Admin_Review->action_edit()
+#3 [internal function]: Kohana_Controller->execute()
+#4 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Review))
+#5 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#7 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#8 {main} in :
+2013-06-10 13:51:30 --- CRITICAL: ErrorException [ 2 ]: mkdir() [function.mkdir]: File exists ~ APPPATH\classes\Controller\admin\Review.php [ 36 ] in :
+2013-06-10 13:51:30 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'mkdir() [<a hre...', 'Z:\home\app-lou...', 36, Array)
+#1 Z:\home\app-loud.test\www\application\classes\Controller\admin\Review.php(36): mkdir('Z:\home\app-lou...')
+#2 Z:\home\app-loud.test\www\system\classes\Kohana\Controller.php(84): Controller_Admin_Review->action_edit()
+#3 [internal function]: Kohana_Controller->execute()
+#4 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Review))
+#5 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#7 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#8 {main} in :
+2013-06-10 13:51:32 --- CRITICAL: ErrorException [ 2 ]: mkdir() [function.mkdir]: File exists ~ APPPATH\classes\Controller\admin\Review.php [ 36 ] in :
+2013-06-10 13:51:32 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'mkdir() [<a hre...', 'Z:\home\app-lou...', 36, Array)
+#1 Z:\home\app-loud.test\www\application\classes\Controller\admin\Review.php(36): mkdir('Z:\home\app-lou...')
+#2 Z:\home\app-loud.test\www\system\classes\Kohana\Controller.php(84): Controller_Admin_Review->action_edit()
+#3 [internal function]: Kohana_Controller->execute()
+#4 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Review))
+#5 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#7 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#8 {main} in :
+2013-06-10 13:55:28 --- CRITICAL: ErrorException [ 2 ]: mkdir() [function.mkdir]: File exists ~ APPPATH\classes\Controller\admin\Review.php [ 36 ] in :
+2013-06-10 13:55:28 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'mkdir() [<a hre...', 'Z:\home\app-lou...', 36, Array)
+#1 Z:\home\app-loud.test\www\application\classes\Controller\admin\Review.php(36): mkdir('Z:\home\app-lou...')
+#2 Z:\home\app-loud.test\www\system\classes\Kohana\Controller.php(84): Controller_Admin_Review->action_edit()
+#3 [internal function]: Kohana_Controller->execute()
+#4 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Review))
+#5 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#7 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#8 {main} in :
+2013-06-10 15:02:55 --- CRITICAL: ErrorException [ 2 ]: unlink(Z:\home\app-loud.test\www\reviews\22\img\) [function.unlink]: Permission denied ~ APPPATH\classes\Controller\admin\Review.php [ 250 ] in :
+2013-06-10 15:02:55 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'unlink(Z:\home\...', 'Z:\home\app-lou...', 250, Array)
+#1 Z:\home\app-loud.test\www\application\classes\Controller\admin\Review.php(250): unlink('Z:\home\app-lou...')
+#2 Z:\home\app-loud.test\www\system\classes\Kohana\Controller.php(84): Controller_Admin_Review->action_imgdel()
+#3 [internal function]: Kohana_Controller->execute()
+#4 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Review))
+#5 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#7 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#8 {main} in :
+2013-06-10 15:03:00 --- CRITICAL: ErrorException [ 2 ]: unlink(Z:\home\app-loud.test\www\reviews\22\img\) [function.unlink]: Permission denied ~ APPPATH\classes\Controller\admin\Review.php [ 250 ] in :
+2013-06-10 15:03:00 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'unlink(Z:\home\...', 'Z:\home\app-lou...', 250, Array)
+#1 Z:\home\app-loud.test\www\application\classes\Controller\admin\Review.php(250): unlink('Z:\home\app-lou...')
+#2 Z:\home\app-loud.test\www\system\classes\Kohana\Controller.php(84): Controller_Admin_Review->action_imgdel()
+#3 [internal function]: Kohana_Controller->execute()
+#4 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Review))
+#5 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#7 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#8 {main} in :
+2013-06-10 15:03:24 --- CRITICAL: ErrorException [ 2 ]: unlink(Z:\home\app-loud.test\www\reviews\22\img\) [function.unlink]: Permission denied ~ APPPATH\classes\Controller\admin\Review.php [ 250 ] in :
+2013-06-10 15:03:24 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'unlink(Z:\home\...', 'Z:\home\app-lou...', 250, Array)
+#1 Z:\home\app-loud.test\www\application\classes\Controller\admin\Review.php(250): unlink('Z:\home\app-lou...')
+#2 Z:\home\app-loud.test\www\system\classes\Kohana\Controller.php(84): Controller_Admin_Review->action_imgdel()
+#3 [internal function]: Kohana_Controller->execute()
+#4 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Review))
+#5 Z:\home\app-loud.test\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 Z:\home\app-loud.test\www\system\classes\Kohana\Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#7 Z:\home\app-loud.test\www\index.php(118): Kohana_Request->execute()
+#8 {main} in :

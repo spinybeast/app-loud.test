@@ -1,0 +1,132 @@
+.jcarousel-wrapper{
+    position: relative;
+}
+.jcarousel-frame, .jcarousel-frame-wrapper {
+    height: 226px;
+    margin-left: 2px;
+    width: 702px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.jcarousel-frame-wrapper {
+    border-top: 1px solid #C5C5C5;
+    border-left: 1px solid #C5C5C5;
+    border-right: 1px solid #C5C5C5;
+    border-bottom: 8px solid #C5C5C5;
+    border-radius: 20px;
+}
+    .jcarousel-frame ul {
+        padding: 0;
+        margin: 0;
+    }
+        .jcarousel-frame ul li {
+            float: left;
+            width: 216px;
+            height: 200px;
+            border-top: 13px solid #E7E7E7;
+            border-bottom: 13px solid #E7E7E7;
+            border-left: 13px solid #E7E7E7;
+            background: #C5C5C5;
+        }
+        .jcarousel-frame ul li:last-child{
+            border-right: 13px solid #E7E7E7;
+        }
+        .jcarousel-frame ul li:last-child, .jcarousel-next .transparent {
+            border-radius: 0 20px 20px 0;
+        }
+        .jcarousel-frame ul li:first-child, .jcarousel-prev .transparent{
+            border-radius: 20px 0 0 20px;
+        }
+
+/*
+This is the visible area of you carousel.
+Set a width here to define how much items are visible.
+The width can be either fixed in px or flexible in %.
+Position must be relative!
+*/
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    width: 700px;
+    margin: 15px 23px 15px 5px;
+}
+
+/*
+This is the container of the carousel items.
+You must ensure that the position is relative or absolute and
+that the width is big enough to contain all items.
+*/
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+
+    /* Optional, required in this case since it's a <ul> element */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+These are the item elements. jCarousel works best, if the items
+have a fixed width and height (but it's not required).
+*/
+.jcarousel li {
+    /* Required only for block elements like <li>'s */
+    float: left;
+    padding-left: 13px;
+    padding-left: 13px;
+    padding-top: 14px;
+    padding-bottom: 13px;
+}
+    .jcarousel li:last-child{
+        padding-right: 13px;
+    }
+    .jcarousel li img{
+        height: 198px;
+        width: 214px;
+        border: 1px solid #B0ACAD;
+
+    }
+.jcarousel-prev, .jcarousel-next {
+    z-index: 1;
+    position: absolute;
+    width: 35px;
+    height: 226px;
+    cursor: pointer;
+}
+.jcarousel-next {
+    margin-left: 665px;
+}
+    .transparent {
+        background: #f3f3f3;
+        opacity: 0.6;
+        height: 226px;
+    }
+    .jcarousel-next span, .jcarousel-prev span {
+        display: block;
+        position: absolute;
+        top: 107px;
+        left: 10px;
+        width: 15px;
+        height: 19px;
+        background: url(/media/images/slider/arrows.png) no-repeat;
+    }
+    .jcarousel-prev span {
+        background-position: 0 0;
+    }
+    .jcarousel-next span {
+        background-position: -15px 0;
+    }
+    .jcarousel-next:hover span {
+        background-position: -15px -19px;
+    }
+    .jcarousel-prev:hover span {
+        background-position: 0 -19px;
+    }
+    .jcarousel-next.inactive span {
+        background-position: -15px -38px;
+    }
+    .jcarousel-prev.inactive span {
+        background-position: 0 -38px;
+    }

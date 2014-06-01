@@ -1,0 +1,58 @@
+# Kohana 3 Asset Helper
+
+Adds two new capabilities to Jonathan Geiger's original assets helper, namely:
+
+* `media` config option to specify the corresponding attribute for the `<link>` tag for stylesheets
+* `cache_bust = 'filename'` option to include the cache-busting timestamp within the filename instead of appended as a querystring parameter
+
+
+# Usage examples
+
+## `media` attribute support
+
+Including a compressed print stylesheet:
+
+	<?php echo Asset::stylesheets(array(
+		'reset',
+		'layout',
+		'...your standard stylesheets',
+		)); ?>
+
+	<?php echo Asset::stylesheets(array(
+		'print',
+		), array(
+			'cache' => 'stylesheets/cache/print-min.css',
+			'media' => 'print',
+		)); ?>
+		
+Outputs:
+
+	<link type="text/css" href="stylesheets/cache/stylesheet-min.css" rel="stylesheet" />
+	
+	<link type="text/css" href="stylesheets/cache/print-min.css" rel="stylesheet" media="print" />
+
+
+# Filename rewrite ssupport
+
+Including `'cache_bust' => 'filename',` in your config will result in:
+
+	<script type="text/javascript" src="javascripts/cache/javascript-min.1274087975.js"></script>
+	
+	<link type="text/css" href="stylesheets/cache/stylesheet-min.1274087975.css" rel="stylesheet" />
+
+Instead of:
+
+	<script type="text/javascript" src="javascripts/cache/javascript-min.js?1274087975"></script>
+	
+	<link type="text/css" href="stylesheets/cache/stylesheet-min.css?1274087975" rel="stylesheet" />
+
+
+## Note
+
+Since this option creates virtual URIs that do not map to physical files on disk, you will need to use a rewrite rule to perform the mapping. The example below demonstrates how to do this if you're on Apache:
+
+	RewriteEngine On
+	RewriteBase /
+
+	# replace timestamped urls
+	RewriteRule (.*)\.\d+\.(css|js)$ $1.$2 [L]

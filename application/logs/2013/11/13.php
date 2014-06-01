@@ -1,0 +1,357 @@
+<?php defined('SYSPATH') OR die('No direct script access.'); ?>
+
+2013-11-13 08:37:11 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: header ~ APPPATH/views/templates/default/main.php [ 25 ] in /home/spiny/app-loud.test/www/application/views/templates/default/main.php:25
+2013-11-13 08:37:11 --- DEBUG: #0 /home/spiny/app-loud.test/www/application/views/templates/default/main.php(25): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/spiny/app...', 25, Array)
+#1 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(61): include('/home/spiny/app...')
+#2 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/spiny/app...', Array)
+#3 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller/Template.php(44): Kohana_View->render()
+#4 /home/spiny/app-loud.test/www/application/classes/Controller/Template.php(62): Kohana_Controller_Template->after()
+#5 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller.php(87): Controller_Template->after()
+#6 [internal function]: Kohana_Controller->execute()
+#7 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Review))
+#8 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#9 /home/spiny/app-loud.test/www/system/classes/Kohana/Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#10 /home/spiny/app-loud.test/www/index.php(118): Kohana_Request->execute()
+#11 {main} in /home/spiny/app-loud.test/www/application/views/templates/default/main.php:25
+2013-11-13 08:38:54 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: header ~ APPPATH/views/templates/default/main.php [ 25 ] in /home/spiny/app-loud.test/www/application/views/templates/default/main.php:25
+2013-11-13 08:38:54 --- DEBUG: #0 /home/spiny/app-loud.test/www/application/views/templates/default/main.php(25): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/spiny/app...', 25, Array)
+#1 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(61): include('/home/spiny/app...')
+#2 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/spiny/app...', Array)
+#3 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller/Template.php(44): Kohana_View->render()
+#4 /home/spiny/app-loud.test/www/application/classes/Controller/Template.php(62): Kohana_Controller_Template->after()
+#5 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller.php(87): Controller_Template->after()
+#6 [internal function]: Kohana_Controller->execute()
+#7 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Review))
+#8 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#9 /home/spiny/app-loud.test/www/system/classes/Kohana/Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#10 /home/spiny/app-loud.test/www/index.php(118): Kohana_Request->execute()
+#11 {main} in /home/spiny/app-loud.test/www/application/views/templates/default/main.php:25
+2013-11-13 08:39:09 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: header ~ APPPATH/views/templates/default/main.php [ 25 ] in /home/spiny/app-loud.test/www/application/views/templates/default/main.php:25
+2013-11-13 08:39:09 --- DEBUG: #0 /home/spiny/app-loud.test/www/application/views/templates/default/main.php(25): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/spiny/app...', 25, Array)
+#1 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(61): include('/home/spiny/app...')
+#2 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/spiny/app...', Array)
+#3 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller/Template.php(44): Kohana_View->render()
+#4 /home/spiny/app-loud.test/www/application/classes/Controller/Template.php(62): Kohana_Controller_Template->after()
+#5 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller.php(87): Controller_Template->after()
+#6 [internal function]: Kohana_Controller->execute()
+#7 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Review))
+#8 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#9 /home/spiny/app-loud.test/www/system/classes/Kohana/Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#10 /home/spiny/app-loud.test/www/index.php(118): Kohana_Request->execute()
+#11 {main} in /home/spiny/app-loud.test/www/application/views/templates/default/main.php:25
+2013-11-13 08:44:34 --- EMERGENCY: ErrorException [ 2 ]: Missing argument 3 for Kohana_ORM::where(), called in /home/spiny/app-loud.test/www/application/classes/Controller/Review.php on line 71 and defined ~ MODPATH/orm/classes/Kohana/ORM.php [ 1846 ] in /home/spiny/app-loud.test/www/modules/orm/classes/Kohana/ORM.php:1846
+2013-11-13 08:44:34 --- DEBUG: #0 /home/spiny/app-loud.test/www/modules/orm/classes/Kohana/ORM.php(1846): Kohana_Core::error_handler(2, 'Missing argumen...', '/home/spiny/app...', 1846, Array)
+#1 /home/spiny/app-loud.test/www/application/classes/Controller/Review.php(71): Kohana_ORM->where('name', 'test')
+#2 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller.php(84): Controller_Review->action_read()
+#3 [internal function]: Kohana_Controller->execute()
+#4 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Review))
+#5 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 /home/spiny/app-loud.test/www/system/classes/Kohana/Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#7 /home/spiny/app-loud.test/www/index.php(118): Kohana_Request->execute()
+#8 {main} in /home/spiny/app-loud.test/www/modules/orm/classes/Kohana/ORM.php:1846
+2013-11-13 08:48:27 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: activePlatform ~ APPPATH/views/templates/default/header.php [ 14 ] in /home/spiny/app-loud.test/www/application/views/templates/default/header.php:14
+2013-11-13 08:48:27 --- DEBUG: #0 /home/spiny/app-loud.test/www/application/views/templates/default/header.php(14): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/spiny/app...', 14, Array)
+#1 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(61): include('/home/spiny/app...')
+#2 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/spiny/app...', Array)
+#3 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(228): Kohana_View->render()
+#4 /home/spiny/app-loud.test/www/application/views/templates/default/main.php(25): Kohana_View->__toString()
+#5 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(61): include('/home/spiny/app...')
+#6 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/spiny/app...', Array)
+#7 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller/Template.php(44): Kohana_View->render()
+#8 /home/spiny/app-loud.test/www/application/classes/Controller/Template.php(62): Kohana_Controller_Template->after()
+#9 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller.php(87): Controller_Template->after()
+#10 [internal function]: Kohana_Controller->execute()
+#11 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Review))
+#12 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#13 /home/spiny/app-loud.test/www/system/classes/Kohana/Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#14 /home/spiny/app-loud.test/www/index.php(118): Kohana_Request->execute()
+#15 {main} in /home/spiny/app-loud.test/www/application/views/templates/default/header.php:14
+2013-11-13 08:48:27 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: activePlatform ~ APPPATH/views/templates/default/right_block.php [ 13 ] in /home/spiny/app-loud.test/www/application/views/templates/default/right_block.php:13
+2013-11-13 08:48:27 --- DEBUG: #0 /home/spiny/app-loud.test/www/application/views/templates/default/right_block.php(13): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/spiny/app...', 13, Array)
+#1 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(61): include('/home/spiny/app...')
+#2 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/spiny/app...', Array)
+#3 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(228): Kohana_View->render()
+#4 /home/spiny/app-loud.test/www/application/views/templates/default/main.php(27): Kohana_View->__toString()
+#5 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(61): include('/home/spiny/app...')
+#6 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/spiny/app...', Array)
+#7 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller/Template.php(44): Kohana_View->render()
+#8 /home/spiny/app-loud.test/www/application/classes/Controller/Template.php(62): Kohana_Controller_Template->after()
+#9 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller.php(87): Controller_Template->after()
+#10 [internal function]: Kohana_Controller->execute()
+#11 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Review))
+#12 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#13 /home/spiny/app-loud.test/www/system/classes/Kohana/Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#14 /home/spiny/app-loud.test/www/index.php(118): Kohana_Request->execute()
+#15 {main} in /home/spiny/app-loud.test/www/application/views/templates/default/right_block.php:13
+2013-11-13 08:59:27 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: activePlatform ~ APPPATH/views/templates/default/header.php [ 14 ] in /home/spiny/app-loud.test/www/application/views/templates/default/header.php:14
+2013-11-13 08:59:27 --- DEBUG: #0 /home/spiny/app-loud.test/www/application/views/templates/default/header.php(14): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/spiny/app...', 14, Array)
+#1 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(61): include('/home/spiny/app...')
+#2 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/spiny/app...', Array)
+#3 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(228): Kohana_View->render()
+#4 /home/spiny/app-loud.test/www/application/views/templates/default/main.php(25): Kohana_View->__toString()
+#5 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(61): include('/home/spiny/app...')
+#6 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/spiny/app...', Array)
+#7 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller/Template.php(44): Kohana_View->render()
+#8 /home/spiny/app-loud.test/www/application/classes/Controller/Template.php(62): Kohana_Controller_Template->after()
+#9 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller.php(87): Controller_Template->after()
+#10 [internal function]: Kohana_Controller->execute()
+#11 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Review))
+#12 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#13 /home/spiny/app-loud.test/www/system/classes/Kohana/Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#14 /home/spiny/app-loud.test/www/index.php(118): Kohana_Request->execute()
+#15 {main} in /home/spiny/app-loud.test/www/application/views/templates/default/header.php:14
+2013-11-13 08:59:27 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: activePlatform ~ APPPATH/views/templates/default/right_block.php [ 13 ] in /home/spiny/app-loud.test/www/application/views/templates/default/right_block.php:13
+2013-11-13 08:59:27 --- DEBUG: #0 /home/spiny/app-loud.test/www/application/views/templates/default/right_block.php(13): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/spiny/app...', 13, Array)
+#1 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(61): include('/home/spiny/app...')
+#2 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/spiny/app...', Array)
+#3 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(228): Kohana_View->render()
+#4 /home/spiny/app-loud.test/www/application/views/templates/default/main.php(27): Kohana_View->__toString()
+#5 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(61): include('/home/spiny/app...')
+#6 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/spiny/app...', Array)
+#7 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller/Template.php(44): Kohana_View->render()
+#8 /home/spiny/app-loud.test/www/application/classes/Controller/Template.php(62): Kohana_Controller_Template->after()
+#9 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller.php(87): Controller_Template->after()
+#10 [internal function]: Kohana_Controller->execute()
+#11 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Review))
+#12 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#13 /home/spiny/app-loud.test/www/system/classes/Kohana/Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#14 /home/spiny/app-loud.test/www/index.php(118): Kohana_Request->execute()
+#15 {main} in /home/spiny/app-loud.test/www/application/views/templates/default/right_block.php:13
+2013-11-13 09:00:39 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: activePlatform ~ APPPATH/views/templates/default/header.php [ 14 ] in /home/spiny/app-loud.test/www/application/views/templates/default/header.php:14
+2013-11-13 09:00:39 --- DEBUG: #0 /home/spiny/app-loud.test/www/application/views/templates/default/header.php(14): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/spiny/app...', 14, Array)
+#1 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(61): include('/home/spiny/app...')
+#2 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/spiny/app...', Array)
+#3 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(228): Kohana_View->render()
+#4 /home/spiny/app-loud.test/www/application/views/templates/default/main.php(25): Kohana_View->__toString()
+#5 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(61): include('/home/spiny/app...')
+#6 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/spiny/app...', Array)
+#7 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller/Template.php(44): Kohana_View->render()
+#8 /home/spiny/app-loud.test/www/application/classes/Controller/Template.php(62): Kohana_Controller_Template->after()
+#9 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller.php(87): Controller_Template->after()
+#10 [internal function]: Kohana_Controller->execute()
+#11 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Review))
+#12 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#13 /home/spiny/app-loud.test/www/system/classes/Kohana/Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#14 /home/spiny/app-loud.test/www/index.php(118): Kohana_Request->execute()
+#15 {main} in /home/spiny/app-loud.test/www/application/views/templates/default/header.php:14
+2013-11-13 09:00:39 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: activePlatform ~ APPPATH/views/templates/default/right_block.php [ 13 ] in /home/spiny/app-loud.test/www/application/views/templates/default/right_block.php:13
+2013-11-13 09:00:39 --- DEBUG: #0 /home/spiny/app-loud.test/www/application/views/templates/default/right_block.php(13): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/spiny/app...', 13, Array)
+#1 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(61): include('/home/spiny/app...')
+#2 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/spiny/app...', Array)
+#3 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(228): Kohana_View->render()
+#4 /home/spiny/app-loud.test/www/application/views/templates/default/main.php(27): Kohana_View->__toString()
+#5 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(61): include('/home/spiny/app...')
+#6 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/spiny/app...', Array)
+#7 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller/Template.php(44): Kohana_View->render()
+#8 /home/spiny/app-loud.test/www/application/classes/Controller/Template.php(62): Kohana_Controller_Template->after()
+#9 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller.php(87): Controller_Template->after()
+#10 [internal function]: Kohana_Controller->execute()
+#11 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Review))
+#12 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#13 /home/spiny/app-loud.test/www/system/classes/Kohana/Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#14 /home/spiny/app-loud.test/www/index.php(118): Kohana_Request->execute()
+#15 {main} in /home/spiny/app-loud.test/www/application/views/templates/default/right_block.php:13
+2013-11-13 09:14:15 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: activePlatform ~ APPPATH/views/templates/default/header.php [ 14 ] in /home/spiny/app-loud.test/www/application/views/templates/default/header.php:14
+2013-11-13 09:14:15 --- DEBUG: #0 /home/spiny/app-loud.test/www/application/views/templates/default/header.php(14): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/spiny/app...', 14, Array)
+#1 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(61): include('/home/spiny/app...')
+#2 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/spiny/app...', Array)
+#3 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(228): Kohana_View->render()
+#4 /home/spiny/app-loud.test/www/application/views/templates/default/main.php(25): Kohana_View->__toString()
+#5 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(61): include('/home/spiny/app...')
+#6 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/spiny/app...', Array)
+#7 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller/Template.php(44): Kohana_View->render()
+#8 /home/spiny/app-loud.test/www/application/classes/Controller/Template.php(62): Kohana_Controller_Template->after()
+#9 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller.php(87): Controller_Template->after()
+#10 [internal function]: Kohana_Controller->execute()
+#11 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Review))
+#12 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#13 /home/spiny/app-loud.test/www/system/classes/Kohana/Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#14 /home/spiny/app-loud.test/www/index.php(118): Kohana_Request->execute()
+#15 {main} in /home/spiny/app-loud.test/www/application/views/templates/default/header.php:14
+2013-11-13 09:14:16 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: activePlatform ~ APPPATH/views/templates/default/right_block.php [ 13 ] in /home/spiny/app-loud.test/www/application/views/templates/default/right_block.php:13
+2013-11-13 09:14:16 --- DEBUG: #0 /home/spiny/app-loud.test/www/application/views/templates/default/right_block.php(13): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/spiny/app...', 13, Array)
+#1 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(61): include('/home/spiny/app...')
+#2 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/spiny/app...', Array)
+#3 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(228): Kohana_View->render()
+#4 /home/spiny/app-loud.test/www/application/views/templates/default/main.php(27): Kohana_View->__toString()
+#5 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(61): include('/home/spiny/app...')
+#6 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/spiny/app...', Array)
+#7 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller/Template.php(44): Kohana_View->render()
+#8 /home/spiny/app-loud.test/www/application/classes/Controller/Template.php(62): Kohana_Controller_Template->after()
+#9 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller.php(87): Controller_Template->after()
+#10 [internal function]: Kohana_Controller->execute()
+#11 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Review))
+#12 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#13 /home/spiny/app-loud.test/www/system/classes/Kohana/Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#14 /home/spiny/app-loud.test/www/index.php(118): Kohana_Request->execute()
+#15 {main} in /home/spiny/app-loud.test/www/application/views/templates/default/right_block.php:13
+2013-11-13 09:14:22 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: activePlatform ~ APPPATH/views/templates/default/header.php [ 14 ] in /home/spiny/app-loud.test/www/application/views/templates/default/header.php:14
+2013-11-13 09:14:22 --- DEBUG: #0 /home/spiny/app-loud.test/www/application/views/templates/default/header.php(14): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/spiny/app...', 14, Array)
+#1 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(61): include('/home/spiny/app...')
+#2 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/spiny/app...', Array)
+#3 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(228): Kohana_View->render()
+#4 /home/spiny/app-loud.test/www/application/views/templates/default/main.php(25): Kohana_View->__toString()
+#5 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(61): include('/home/spiny/app...')
+#6 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/spiny/app...', Array)
+#7 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller/Template.php(44): Kohana_View->render()
+#8 /home/spiny/app-loud.test/www/application/classes/Controller/Template.php(62): Kohana_Controller_Template->after()
+#9 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller.php(87): Controller_Template->after()
+#10 [internal function]: Kohana_Controller->execute()
+#11 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Review))
+#12 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#13 /home/spiny/app-loud.test/www/system/classes/Kohana/Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#14 /home/spiny/app-loud.test/www/index.php(118): Kohana_Request->execute()
+#15 {main} in /home/spiny/app-loud.test/www/application/views/templates/default/header.php:14
+2013-11-13 09:14:22 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: activePlatform ~ APPPATH/views/templates/default/right_block.php [ 13 ] in /home/spiny/app-loud.test/www/application/views/templates/default/right_block.php:13
+2013-11-13 09:14:22 --- DEBUG: #0 /home/spiny/app-loud.test/www/application/views/templates/default/right_block.php(13): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/spiny/app...', 13, Array)
+#1 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(61): include('/home/spiny/app...')
+#2 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/spiny/app...', Array)
+#3 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(228): Kohana_View->render()
+#4 /home/spiny/app-loud.test/www/application/views/templates/default/main.php(27): Kohana_View->__toString()
+#5 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(61): include('/home/spiny/app...')
+#6 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/spiny/app...', Array)
+#7 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller/Template.php(44): Kohana_View->render()
+#8 /home/spiny/app-loud.test/www/application/classes/Controller/Template.php(62): Kohana_Controller_Template->after()
+#9 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller.php(87): Controller_Template->after()
+#10 [internal function]: Kohana_Controller->execute()
+#11 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Review))
+#12 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#13 /home/spiny/app-loud.test/www/system/classes/Kohana/Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#14 /home/spiny/app-loud.test/www/index.php(118): Kohana_Request->execute()
+#15 {main} in /home/spiny/app-loud.test/www/application/views/templates/default/right_block.php:13
+2013-11-13 09:14:42 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: activePlatform ~ APPPATH/views/templates/default/header.php [ 14 ] in /home/spiny/app-loud.test/www/application/views/templates/default/header.php:14
+2013-11-13 09:14:42 --- DEBUG: #0 /home/spiny/app-loud.test/www/application/views/templates/default/header.php(14): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/spiny/app...', 14, Array)
+#1 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(61): include('/home/spiny/app...')
+#2 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/spiny/app...', Array)
+#3 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(228): Kohana_View->render()
+#4 /home/spiny/app-loud.test/www/application/views/templates/default/main.php(25): Kohana_View->__toString()
+#5 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(61): include('/home/spiny/app...')
+#6 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/spiny/app...', Array)
+#7 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller/Template.php(44): Kohana_View->render()
+#8 /home/spiny/app-loud.test/www/application/classes/Controller/Template.php(62): Kohana_Controller_Template->after()
+#9 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller.php(87): Controller_Template->after()
+#10 [internal function]: Kohana_Controller->execute()
+#11 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Review))
+#12 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#13 /home/spiny/app-loud.test/www/system/classes/Kohana/Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#14 /home/spiny/app-loud.test/www/index.php(118): Kohana_Request->execute()
+#15 {main} in /home/spiny/app-loud.test/www/application/views/templates/default/header.php:14
+2013-11-13 09:14:42 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: activePlatform ~ APPPATH/views/templates/default/right_block.php [ 13 ] in /home/spiny/app-loud.test/www/application/views/templates/default/right_block.php:13
+2013-11-13 09:14:42 --- DEBUG: #0 /home/spiny/app-loud.test/www/application/views/templates/default/right_block.php(13): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/spiny/app...', 13, Array)
+#1 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(61): include('/home/spiny/app...')
+#2 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/spiny/app...', Array)
+#3 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(228): Kohana_View->render()
+#4 /home/spiny/app-loud.test/www/application/views/templates/default/main.php(27): Kohana_View->__toString()
+#5 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(61): include('/home/spiny/app...')
+#6 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/spiny/app...', Array)
+#7 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller/Template.php(44): Kohana_View->render()
+#8 /home/spiny/app-loud.test/www/application/classes/Controller/Template.php(62): Kohana_Controller_Template->after()
+#9 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller.php(87): Controller_Template->after()
+#10 [internal function]: Kohana_Controller->execute()
+#11 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Review))
+#12 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#13 /home/spiny/app-loud.test/www/system/classes/Kohana/Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#14 /home/spiny/app-loud.test/www/index.php(118): Kohana_Request->execute()
+#15 {main} in /home/spiny/app-loud.test/www/application/views/templates/default/right_block.php:13
+2013-11-13 09:28:56 --- EMERGENCY: ErrorException [ 1 ]: Call to a member function action() on a non-object ~ SYSPATH/classes/Kohana/Controller.php [ 72 ] in file:line
+2013-11-13 09:28:56 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2013-11-13 09:29:31 --- EMERGENCY: ErrorException [ 4096 ]: Argument 1 passed to Kohana_Controller::__construct() must be an instance of Request, none given, called in /home/spiny/app-loud.test/www/application/classes/Controller/Review.php on line 7 and defined ~ SYSPATH/classes/Kohana/Controller.php [ 43 ] in /home/spiny/app-loud.test/www/system/classes/Kohana/Controller.php:43
+2013-11-13 09:29:31 --- DEBUG: #0 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller.php(43): Kohana_Core::error_handler(4096, 'Argument 1 pass...', '/home/spiny/app...', 43, Array)
+#1 /home/spiny/app-loud.test/www/application/classes/Controller/Review.php(7): Kohana_Controller->__construct()
+#2 [internal function]: Controller_Review->__construct(Object(Request), Object(Response))
+#3 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client/Internal.php(94): ReflectionClass->newInstance(Object(Request), Object(Response))
+#4 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 /home/spiny/app-loud.test/www/system/classes/Kohana/Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#6 /home/spiny/app-loud.test/www/index.php(118): Kohana_Request->execute()
+#7 {main} in /home/spiny/app-loud.test/www/system/classes/Kohana/Controller.php:43
+2013-11-13 09:32:29 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: filter ~ APPPATH/views/templates/default/header.php [ 22 ] in /home/spiny/app-loud.test/www/application/views/templates/default/header.php:22
+2013-11-13 09:32:29 --- DEBUG: #0 /home/spiny/app-loud.test/www/application/views/templates/default/header.php(22): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/spiny/app...', 22, Array)
+#1 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(61): include('/home/spiny/app...')
+#2 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/spiny/app...', Array)
+#3 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(228): Kohana_View->render()
+#4 /home/spiny/app-loud.test/www/application/views/templates/default/main.php(25): Kohana_View->__toString()
+#5 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(61): include('/home/spiny/app...')
+#6 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/spiny/app...', Array)
+#7 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller/Template.php(44): Kohana_View->render()
+#8 /home/spiny/app-loud.test/www/application/classes/Controller/Template.php(62): Kohana_Controller_Template->after()
+#9 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller.php(87): Controller_Template->after()
+#10 [internal function]: Kohana_Controller->execute()
+#11 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Review))
+#12 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#13 /home/spiny/app-loud.test/www/system/classes/Kohana/Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#14 /home/spiny/app-loud.test/www/index.php(118): Kohana_Request->execute()
+#15 {main} in /home/spiny/app-loud.test/www/application/views/templates/default/header.php:22
+2013-11-13 09:37:36 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: filter ~ APPPATH/views/templates/default/header.php [ 22 ] in /home/spiny/app-loud.test/www/application/views/templates/default/header.php:22
+2013-11-13 09:37:36 --- DEBUG: #0 /home/spiny/app-loud.test/www/application/views/templates/default/header.php(22): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/spiny/app...', 22, Array)
+#1 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(61): include('/home/spiny/app...')
+#2 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/spiny/app...', Array)
+#3 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(228): Kohana_View->render()
+#4 /home/spiny/app-loud.test/www/application/views/templates/default/main.php(25): Kohana_View->__toString()
+#5 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(61): include('/home/spiny/app...')
+#6 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/spiny/app...', Array)
+#7 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller/Template.php(44): Kohana_View->render()
+#8 /home/spiny/app-loud.test/www/application/classes/Controller/Template.php(62): Kohana_Controller_Template->after()
+#9 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller.php(87): Controller_Template->after()
+#10 [internal function]: Kohana_Controller->execute()
+#11 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Review))
+#12 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#13 /home/spiny/app-loud.test/www/system/classes/Kohana/Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#14 /home/spiny/app-loud.test/www/index.php(118): Kohana_Request->execute()
+#15 {main} in /home/spiny/app-loud.test/www/application/views/templates/default/header.php:22
+2013-11-13 09:39:40 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: filter ~ APPPATH/views/templates/default/header.php [ 22 ] in /home/spiny/app-loud.test/www/application/views/templates/default/header.php:22
+2013-11-13 09:39:40 --- DEBUG: #0 /home/spiny/app-loud.test/www/application/views/templates/default/header.php(22): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/spiny/app...', 22, Array)
+#1 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(61): include('/home/spiny/app...')
+#2 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/spiny/app...', Array)
+#3 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(228): Kohana_View->render()
+#4 /home/spiny/app-loud.test/www/application/views/templates/default/main.php(25): Kohana_View->__toString()
+#5 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(61): include('/home/spiny/app...')
+#6 /home/spiny/app-loud.test/www/system/classes/Kohana/View.php(348): Kohana_View::capture('/home/spiny/app...', Array)
+#7 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller/Template.php(44): Kohana_View->render()
+#8 /home/spiny/app-loud.test/www/application/classes/Controller/Template.php(62): Kohana_Controller_Template->after()
+#9 /home/spiny/app-loud.test/www/system/classes/Kohana/Controller.php(87): Controller_Template->after()
+#10 [internal function]: Kohana_Controller->execute()
+#11 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Review))
+#12 /home/spiny/app-loud.test/www/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#13 /home/spiny/app-loud.test/www/system/classes/Kohana/Request.php(990): Kohana_Request_Client->execute(Object(Request))
+#14 /home/spiny/app-loud.test/www/index.php(118): Kohana_Request->execute()
+#15 {main} in /home/spiny/app-loud.test/www/application/views/templates/default/header.php:22
+2013-11-13 09:53:51 --- EMERGENCY: ErrorException [ 1 ]: Call to a member function and_where() on a non-object ~ APPPATH/classes/Controller/Review.php [ 36 ] in file:line
+2013-11-13 09:53:51 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2013-11-13 09:54:23 --- EMERGENCY: ErrorException [ 1 ]: Call to a member function and_where() on a non-object ~ APPPATH/classes/Controller/Review.php [ 37 ] in file:line
+2013-11-13 09:54:23 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2013-11-13 09:54:31 --- EMERGENCY: ErrorException [ 1 ]: Call to a member function and_where() on a non-object ~ APPPATH/classes/Controller/Review.php [ 36 ] in file:line
+2013-11-13 09:54:31 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2013-11-13 09:54:47 --- EMERGENCY: ErrorException [ 1 ]: Call to a member function and_where() on a non-object ~ APPPATH/classes/Controller/Review.php [ 36 ] in file:line
+2013-11-13 09:54:47 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2013-11-13 09:54:52 --- EMERGENCY: ErrorException [ 1 ]: Call to a member function and_where() on a non-object ~ APPPATH/classes/Controller/Review.php [ 36 ] in file:line
+2013-11-13 09:54:52 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2013-11-13 09:55:16 --- EMERGENCY: ErrorException [ 1 ]: Call to a member function and_where() on a non-object ~ APPPATH/classes/Controller/Review.php [ 37 ] in file:line
+2013-11-13 09:55:16 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2013-11-13 09:55:19 --- EMERGENCY: ErrorException [ 1 ]: Call to a member function and_where() on a non-object ~ APPPATH/classes/Controller/Review.php [ 36 ] in file:line
+2013-11-13 09:55:19 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2013-11-13 09:55:20 --- EMERGENCY: ErrorException [ 1 ]: Call to a member function and_where() on a non-object ~ APPPATH/classes/Controller/Review.php [ 36 ] in file:line
+2013-11-13 09:55:20 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2013-11-13 09:55:21 --- EMERGENCY: ErrorException [ 1 ]: Call to a member function and_where() on a non-object ~ APPPATH/classes/Controller/Review.php [ 36 ] in file:line
+2013-11-13 09:55:21 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2013-11-13 09:55:21 --- EMERGENCY: ErrorException [ 1 ]: Call to a member function and_where() on a non-object ~ APPPATH/classes/Controller/Review.php [ 36 ] in file:line
+2013-11-13 09:55:21 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2013-11-13 09:55:22 --- EMERGENCY: ErrorException [ 1 ]: Call to a member function and_where() on a non-object ~ APPPATH/classes/Controller/Review.php [ 36 ] in file:line
+2013-11-13 09:55:22 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2013-11-13 09:55:26 --- EMERGENCY: ErrorException [ 1 ]: Call to a member function and_where() on a non-object ~ APPPATH/classes/Controller/Review.php [ 36 ] in file:line
+2013-11-13 09:55:26 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2013-11-13 09:57:25 --- EMERGENCY: ErrorException [ 1 ]: Call to a member function and_where() on a non-object ~ APPPATH/classes/Controller/Review.php [ 36 ] in file:line
+2013-11-13 09:57:25 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
