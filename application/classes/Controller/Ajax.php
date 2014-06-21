@@ -129,7 +129,6 @@ class Controller_Ajax extends Controller
 
     private function sendFeedback($data)
     {
-        mail('spiny_beast@mail.ru', 'test', 'test');
         $data['receiverMail'] = Kohana::$config->load('site.admin_mail');
         $data['receiverName'] = 'App-Loud';
         $data['message'] = View::factory('templates/default/contact_email', $data)->render();
