@@ -128,7 +128,7 @@ Kohana::modules(array(
     'pagination' => MODPATH . 'pagination', // pagination
     'captcha' => MODPATH . 'captcha', //Captcha
     // 'asset'        => MODPATH.'asset',        // asset
-    'email' => MODPATH . 'email', // email
+    // 'email' => MODPATH . 'email', // email
 ));
 
 /**

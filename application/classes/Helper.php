@@ -34,4 +34,19 @@ class Helper
     {
         return $file != '.' && $file != '..';
     }
+
+    public static function sendEmail($data)
+    {
+        $to = $data['receiverMail'];
+        $subject = $data['mailSubject'];
+        $message = $data['message'];
+
+        $headers = 'MIME-Version: 1.0' . "\r\n";
+        $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+        $headers .= 'To: ' . $data['receiverName'] . ' <' . $to . '>' . "\r\n";
+        $headers .= 'From: ' . $data['senderName'] . ' <' . $data['senderEmail'] . '>' . "\r\n";
+
+        return mail($to, $subject, $message, $headers);
+    }
 }

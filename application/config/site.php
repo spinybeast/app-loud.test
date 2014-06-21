@@ -10,7 +10,7 @@ return array(
         'mailto'  => ' mailto: support@app-loud.com'
     ),
 
-    'admin_mail' => 'spiny.beast@gmail.com'/*'support@app-loud.com'*/,
+    'admin_mail' => 'support@app-loud.com',
 
     'admin' => array(
         'login' => 'admin',
