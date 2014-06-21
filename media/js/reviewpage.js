@@ -23,8 +23,8 @@ $(document).ready(function () {
             target: '+=3'
         });
 
-//    $('.fancybox').fancybox({
-//        arrows: true
-//    });
+    $('.fancybox').fancybox({
+        arrows: true
+    });
 });
 

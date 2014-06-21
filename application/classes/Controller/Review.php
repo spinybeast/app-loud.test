@@ -83,6 +83,8 @@ class Controller_Review extends Controller_Common
         $this->addJS('media/js/reviewpage.js');
         $this->addJS('media/js/jquery.uploadfile.js');
         $this->addCSS('media/css/jcarousel.css');
+        $this->addCSS('media/css/fancybox.css');
+        $this->addJS('media/js/jquery.fancybox.js');
         $this->page('add_review');
     }
 

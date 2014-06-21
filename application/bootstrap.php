@@ -161,10 +161,11 @@ Route::set('images-list', 'images/list/<id>/<file>.<format>')
         'format' => '\w+',
     ));
 
-Route::set('user_add_review', 'review/add')
+Route::set('user_add_review', 'review/add/<hash>')
     ->defaults(array(
         'controller' => 'review',
         'action' => 'add',
+        'hash' => '\w+'
     ));
 
 Route::set('admin_auth', 'admin/auth(/<action>)')

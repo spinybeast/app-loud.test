@@ -27,9 +27,10 @@ return array(
      */
 
     'options' => array(
-        'hostname' => 'smtp.gmail.com',//'smtpout.secureserver.net',
-        'username' => 'spiny.beast@gmail.com',//'support@app-loud.com',
-        'password' => 'guglzaebal',//'hD8wM1+a#Bd',
-        'port'     => 465,
-        'encryption' => 'ssl'
+    
+        'hostname' => 'smtpout.secureserver.net',
+        'username' => 'support@app-loud.com',
+        'password' => 'hD8wM1+a#Bd',
+        'port'     => 80,
+        'encryption' => ''
     ));

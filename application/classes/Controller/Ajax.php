@@ -77,12 +77,9 @@ class Controller_Ajax extends Controller
         // Передаём статус ответа в массив ответа
         $this->response_body['status'] = $this->status;
 
-        if(PHP_MAJOR_VERSION == 5 AND PHP_MINOR_VERSION < 4)
-        {
-            $this->response->body(str_replace('\/','/', json_encode($this->response_body)));
-        }
-        else
-        {
+        if (PHP_MAJOR_VERSION == 5 AND PHP_MINOR_VERSION < 4) {
+            $this->response->body(str_replace('\/', '/', json_encode($this->response_body)));
+        } else {
             $this->response->body(json_encode($this->response_body, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES));
         }
 
@@ -99,7 +96,8 @@ class Controller_Ajax extends Controller
     public function action_contact()
     {
         if (Request::current()->is_ajax()) {
-            $validator = Validation::factory($this->request->post());
+            $mailInfo = $this->request->post();
+            $validator = Validation::factory($mailInfo);
             $validator->rule("senderName", "not_empty")
                 ->rule("mailText", "not_empty")
                 ->rule("mailSubject", "not_empty")
@@ -107,7 +105,10 @@ class Controller_Ajax extends Controller
                 ->rules("senderEmail", array(array("not_empty"), array("email")));
             if ($validator->check()) {
                 try {
-                    if ($this->sendEmail($this->request->post())){
+                    if ($this->sendEmail($mailInfo)) {
+                        if ($mailInfo['mailSubject'] == 'Review') {
+                            $this->sendReviewAddLink($mailInfo);
+                        }
                         $this->message = self::FORWARDED_MESSAGE_TEXT;
                     } else {
                         $this->errors = array("mail" => self::SEND_EMAIL_ERROR_TEXT);
@@ -137,6 +138,27 @@ class Controller_Ajax extends Controller
         }
 
         return false;
+    }
+
+    private function sendReviewAddLink($data)
+    {
+        Email::connect(Kohana::$config->load('email'));
+
+        $to = $data["senderEmail"];
+        $subject = 'RE: ' . $data["mailSubject"];
+        $from = Kohana::$config->load('site.admin_mail');
+        $message = View::factory("templates/default/review_add_link", array('hash' => $this->makeHash($data["senderEmail"])))->render();
+
+        if (Email::send($to, array($from, "App-Loud"), $subject, $message, $html = true)) {
+            return true;
+        }
+
+        return false;
+    }
+
+    private function makeHash($email)
+    {
+        return md5($email . rand(0, 100));
     }
 
     private function setExceptionMessage($exception)
