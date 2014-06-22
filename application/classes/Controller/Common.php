@@ -9,7 +9,10 @@ class Controller_Common extends Controller_Template
     {
         parent::before();
 
-        if (Helper::isOldInternetExplorer()) {
+        $isOldIE = Helper::isOldInternetExplorer();
+        View::set_global('isOldIE', $isOldIE);
+
+        if ($isOldIE) {
             $this->redirectToBrowserSelection();
         }
 
