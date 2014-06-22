@@ -9,7 +9,9 @@ class Controller_Common extends Controller_Template
     {
         parent::before();
 
-        $this->checkInternetExplorer();
+        if (Helper::isOldInternetExplorer()) {
+            $this->redirectToBrowserSelection();
+        }
 
         $this->platform = Platforms::getActive();
         $this->category = Category::getActive();
@@ -20,15 +22,6 @@ class Controller_Common extends Controller_Template
 
         View::set_global('activePlatform', $this->platform);
         View::set_global('category', $this->category);
-    }
-
-    private function checkInternetExplorer()
-    {
-        $browser = Request::user_agent('browser');
-        $version = Request::user_agent('version');
-        if ($browser == 'Internet Explorer' && ($version == '7.0' || $version == '8.0')) {
-            $this->redirectToBrowserSelection();
-        }
     }
 
     private function redirectToPlatformSelection()

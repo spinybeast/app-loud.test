@@ -47,4 +47,12 @@ class Helper
 
         return mail($to, $subject, $message, $headers);
     }
+
+    public static function isOldInternetExplorer()
+    {
+        $browser = Request::user_agent('browser');
+        $version = Request::user_agent('version');
+
+        return $browser == 'Internet Explorer' && ($version == '7.0' || $version == '8.0');
+    }
 }
