@@ -9,13 +9,6 @@ class Controller_Common extends Controller_Template
     {
         parent::before();
 
-        $isOldIE = Helper::isOldInternetExplorer();
-        View::set_global('isOldIE', $isOldIE);
-
-        if ($isOldIE) {
-            $this->redirectToBrowserSelection();
-        }
-
         $this->platform = Platforms::getActive();
         $this->category = Category::getActive();
 
@@ -30,12 +23,6 @@ class Controller_Common extends Controller_Template
     private function redirectToPlatformSelection()
     {
         HTTP::redirect(Route::get('default')->uri());
-        die;
-    }
-
-    private function redirectToBrowserSelection()
-    {
-        HTTP::redirect(Route::url('static', array('action' => 'browsers')));
         die;
     }
 
