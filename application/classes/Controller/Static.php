@@ -14,4 +14,9 @@ class Controller_Static extends Controller_Common
         $this->addCSS('media/css/selectbox.css');
         $this->page("contact");
     }
+
+    public function action_browsers()
+    {
+        $this->selectBrowserPage();
+    }
 }

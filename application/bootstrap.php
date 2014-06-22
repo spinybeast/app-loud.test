@@ -182,7 +182,7 @@ Route::set('admin', 'admin(/<controller>(/<action>(/<id>)))')
         'action' => 'index',
     ));
 
-Route::set('static', '<action>', array('action' => 'about|contact'))
+Route::set('static', '<action>', array('action' => 'about|contact|browsers'))
     ->defaults(array(
         'controller' => 'static',
     ));

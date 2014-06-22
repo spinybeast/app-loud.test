@@ -850,18 +850,15 @@ h1, .contact-page label{
     border-bottom: none;
     background: url(/media/images/backgrounds/header_zigzag.png) 0 -17px repeat-x;
 }
-    .header.special>p {
+    p.special {
         text-align:center;
         font-size: 1.1em;
         color: #b5b0aa;
-        position: absolute;
-        top: 160px;
-        left: 50%;
-        margin-left: -319px;
     }
 .choose {
     color: #938b8b;
     font-size: 18pt;
+    margin-top: 30px;
 }
 .header.special .logo{
     position: absolute;
@@ -870,9 +867,9 @@ h1, .contact-page label{
     margin-left: -75px;
 }
 .platforms.special {
-    margin-top: 20px;
-    margin-left: -20px;
-    background-image: none;
+    margin: 30px auto;
+    position: relative;
+    top: 0; left: 0;
 }
 .footer.special {
     height: 41px;
@@ -889,11 +886,26 @@ h1, .contact-page label{
 }
 
 .center1 {
-    position: absolute;
-    top: 233px;
-    width: 980px;
     text-align: center;
+    position: absolute;
+    top: 160px;
+    left: 50%;
+    width: 980px;
+    margin-left: -490px;
 }
+
+.browsers{ margin-top: 45px; }
+    .browsers ul { list-style: none }
+    .browsers ul li { display: inline-block; margin-right: 35px;}
+        .browsers ul li a { color: #b5b0aa; text-decoration: none; display: block; width: 73px; padding-top: 80px; background: url(/media/images/buttons/browsers.png) left top no-repeat;}
+            .browsers ul li a.chrome { background-position: 0 0 }
+            .browsers ul li a.chrome:hover { background-position: 0 -97px }
+            .browsers ul li a.opera { background-position: -155px 0 }
+            .browsers ul li a.opera:hover { background-position: -155px -97px }
+            .browsers ul li a.firefox { background-position: -77px 0 }
+            .browsers ul li a.firefox:hover { background-position: -77px -94px }
+            .browsers ul li a.safari { background-position: -229px 0 }
+            .browsers ul li a.safari:hover { background-position: -229px -94px }
 
 /*
  * Add review page

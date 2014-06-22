@@ -2,9 +2,9 @@
 
 class Controller_Template extends Kohana_Controller_Template
 {
-    public $folder = "templates"; // Папка во views, где лежит контейнер и блоки
-    public $layout = "default"; // лайаут (скин), который используем
-    public $file = "main"; // главный файл, который собирает все блоки (хедер, футер и т.п.)
+    public $folder = "templates"; // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ views, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ
+    public $layout = "default"; // пїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅ), пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    public $file = "main"; // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅ.пїЅ.)
     public $template;
 
     protected $platform;
@@ -17,19 +17,19 @@ class Controller_Template extends Kohana_Controller_Template
         $this->template = "{$this->folder}/{$this->layout}/{$this->file}";
         parent::before();
 
-        $this->showeditor = false; //откл в профиле или если моб
+        $this->showeditor = false; //пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
 
         if ($this->isInformationPage()) {
             $this->setShowRightBlock(false);
         } else {
             $this->setShowRightBlock(true);
         }
-        // Инициализируем переменные
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         $this->template->title = 'App-loud';
         $this->template->meta_keywords = '';
         $this->template->meta_description = '';
         $this->template->profiler = false;
-        // css и javascript
+        // css пїЅ javascript
         $this->template->css = array();
         $this->template->js = array();
 
@@ -60,7 +60,7 @@ class Controller_Template extends Kohana_Controller_Template
 
             if (Request::current()->is_ajax() === TRUE) {
 //                $this->response->body($this->template->content);
-            } else { // Выводим контроллер обыкновенный
+            } else { // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
                 $this->template->css = array_merge($css, $this->template->css);
                 $this->template->js = array_merge($js, $this->template->js);
 
@@ -79,6 +79,12 @@ class Controller_Template extends Kohana_Controller_Template
     {
         $content = View::factory("{$this->folder}/{$this->layout}/special/select_platform")
             ->set('platforms', Filter_Platforms::getAll());
+        $this->specialPage($content);
+    }
+
+    protected function selectBrowserPage()
+    {
+        $content = View::factory("{$this->folder}/{$this->layout}/special/select_browser");
         $this->specialPage($content);
     }
 
