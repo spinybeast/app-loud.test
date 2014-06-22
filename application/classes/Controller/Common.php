@@ -8,18 +8,19 @@ class Controller_Common extends Controller_Template
     public function before()
     {
         if (Helper::isOldInternetExplorer()) {
-            $this->redirectToBrowserSelection();
-        }
+            if (Request::current()->action() != 'browsers') {
+                $this->redirectToBrowserSelection();
+            }
+        } else {
+            $this->platform = Platforms::getActive();
+            $this->category = Category::getActive();
+            if (!$this->platform) {
+                $this->redirectToPlatformSelection();
+            }
 
-        $this->platform = Platforms::getActive();
-        $this->category = Category::getActive();
-var_dump($this->platform);
-        if (!$this->platform) {
-            $this->redirectToPlatformSelection();
+            View::set_global('activePlatform', $this->platform);
+            View::set_global('category', $this->category);
         }
-
-        View::set_global('activePlatform', $this->platform);
-        View::set_global('category', $this->category);
         parent::before();
     }
 
@@ -31,7 +32,7 @@ var_dump($this->platform);
 
     private function redirectToBrowserSelection()
     {
-        HTTP::redirect(Route::url('static', array('action' => 'browsers')));
+        HTTP::redirect(URL::site(Route::url('static', array('action' => 'browsers')), true));
         die;
     }
 
