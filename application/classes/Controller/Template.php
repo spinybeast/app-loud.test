@@ -2,9 +2,9 @@
 
 class Controller_Template extends Kohana_Controller_Template
 {
-    public $folder = "templates";
-    public $layout = "default";
-    public $file = "main";
+    public $folder = "templates"; // ����� �� views, ��� ����� ��������� � �����
+    public $layout = "default"; // ������ (����), ������� ����������
+    public $file = "main"; // ������� ����, ������� �������� ��� ����� (�����, ����� � �.�.)
     public $template;
 
     protected $platform;
@@ -17,27 +17,24 @@ class Controller_Template extends Kohana_Controller_Template
         $this->template = "{$this->folder}/{$this->layout}/{$this->file}";
         parent::before();
 
+        $this->showeditor = false; //���� � ������� ��� ���� ���
+
         if ($this->isInformationPage()) {
             $this->setShowRightBlock(false);
         } else {
             $this->setShowRightBlock(true);
         }
-        $isOldIE = Helper::isOldInternetExplorer();
-        View::set_global('isOldIE', $isOldIE);
-
-        if ($isOldIE) {
-            $this->redirectToBrowserSelection();
-        }
-
+        // �������������� ����������
         $this->template->title = 'App-loud';
         $this->template->meta_keywords = '';
         $this->template->meta_description = '';
         $this->template->profiler = false;
-
+        // css � javascript
         $this->template->css = array();
         $this->template->js = array();
 
         if ($this->auto_render) {
+            // Initialize empty values
             $this->template->content = '';
             $this->template->css = array();
             $this->template->js = array();
@@ -56,10 +53,14 @@ class Controller_Template extends Kohana_Controller_Template
                 'media/js/scripts.js'
             );
 
+            if ($this->showeditor) {
+                $js[] = 'editors/tinymce/jscripts/tiny_mce/tiny_mce.js';
+                $js[] = 'media/js/editor.js';
+            }
 
             if (Request::current()->is_ajax() === TRUE) {
 //                $this->response->body($this->template->content);
-            } else {
+            } else { // ������� ���������� ������������
                 $this->template->css = array_merge($css, $this->template->css);
                 $this->template->js = array_merge($js, $this->template->js);
 
@@ -180,11 +181,5 @@ class Controller_Template extends Kohana_Controller_Template
     public function action_platform()
     {
         $this->selectPlatformPage();
-    }
-
-    private function redirectToBrowserSelection()
-    {
-        HTTP::redirect(Route::url('static', array('action' => 'browsers')));
-        die;
     }
 }

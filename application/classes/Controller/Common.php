@@ -7,22 +7,31 @@ class Controller_Common extends Controller_Template
 {
     public function before()
     {
-        parent::before();
+        if (Helper::isOldInternetExplorer()) {
+            $this->redirectToBrowserSelection();
+        }
 
         $this->platform = Platforms::getActive();
         $this->category = Category::getActive();
-
+var_dump($this->platform);
         if (!$this->platform) {
             $this->redirectToPlatformSelection();
         }
 
         View::set_global('activePlatform', $this->platform);
         View::set_global('category', $this->category);
+        parent::before();
     }
 
     private function redirectToPlatformSelection()
     {
         HTTP::redirect(Route::get('default')->uri());
+        die;
+    }
+
+    private function redirectToBrowserSelection()
+    {
+        HTTP::redirect(Route::url('static', array('action' => 'browsers')));
         die;
     }
 
