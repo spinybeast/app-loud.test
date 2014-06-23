@@ -8,33 +8,36 @@ class Controller_Common extends Controller_Template
     public function before()
     {
         if (Helper::isOldInternetExplorer()) {
-            if (Request::current()->action() != 'browsers') {
-                $this->redirectToBrowserSelection();
-            }
-        } else {
-            $this->platform = Platforms::getActive();
-            $this->category = Category::getActive();
-            if (!$this->platform) {
-                $this->redirectToPlatformSelection();
-            }
-
-            View::set_global('activePlatform', $this->platform);
-            View::set_global('category', $this->category);
+            $this->redirectToBrowserSelection();
         }
+
+        $this->platform = Platforms::getActive();
+        $this->category = Category::getActive();
+
+        if (!$this->platform) {
+            $this->redirectToPlatformSelection();
+        }
+
+        View::set_global('activePlatform', $this->platform);
+        View::set_global('category', $this->category);
+
         parent::before();
     }
 
     private function redirectToPlatformSelection()
     {
-        HTTP::redirect(Route::get('default')->uri());
-        die;
+        if (Request::current()->action() != 'platforms') {
+            HTTP::redirect(URL::site(Route::url('default'), true));
+            die;
+        }
     }
 
     private function redirectToBrowserSelection()
     {
-        HTTP::redirect(URL::site(Route::url('static', array('action' => 'browsers')), true));
-        die;
+        if (Request::current()->action() != 'browsers') {
+            HTTP::redirect(URL::site(Route::url('static', array('action' => 'browsers')), true));
+            die;
+        }
     }
-
 
 } 

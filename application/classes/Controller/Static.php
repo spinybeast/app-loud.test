@@ -19,4 +19,9 @@ class Controller_Static extends Controller_Common
     {
         $this->selectBrowserPage();
     }
+
+    public function action_platforms()
+    {
+        $this->selectPlatformPage();
+    }
 }

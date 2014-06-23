@@ -170,8 +170,4 @@ class Controller_Template extends Kohana_Controller_Template
         return $this->showRightBlock;
     }
 
-    public function action_platform()
-    {
-        $this->selectPlatformPage();
-    }
 }

@@ -223,11 +223,9 @@ Route::set('reviews', '<platform>(/<filter>)(/<category>)', array('filter' => im
         'filter' => false
     ));
 
-
-
 Route::set('default', '')
     ->defaults(array(
-        'controller' => 'common',
-        'action' => 'platform'
+        'controller' => 'static',
+        'action' => 'platforms'
     ));
 
