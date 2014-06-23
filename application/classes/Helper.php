@@ -53,6 +53,6 @@ class Helper
         $browser = Request::user_agent('browser');
         $version = Request::user_agent('version');
 
-        return $browser == 'Internet Explorer' && ($version == '7.0' || $version == '8.0');
+        return $browser == 'Internet Explorer' && ($version == '6.0' || $version == '7.0' || $version == '8.0');
     }
 }

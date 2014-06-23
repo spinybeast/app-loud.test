@@ -14,7 +14,8 @@ body, html{
     padding: 0;
     text-align: center;
     background: url(/media/images/backgrounds/body.png) 0 0 repeat #f4f4f4;
-    height: 100%
+    height: 100%;
+    width: 100%;
 }
 img {
     border:none;
@@ -63,6 +64,7 @@ h1, .contact-page label{
 .header{
     position: fixed;
     top: 0;
+    left: 0px;
     height: 129px;
     width: 100%;
     border-bottom: 8px solid #d4d5d2;
@@ -861,9 +863,14 @@ h1, .contact-page label{
     margin-left: -75px;
 }
 .platforms.special {
-    margin: 30px auto;
     position: relative;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
+    margin: 30px auto;
+    width: 460px;
+}
+.platforms.special ul{
+    margin: 0;
 }
 .footer.special {
     height: 41px;
@@ -888,9 +895,9 @@ h1, .contact-page label{
     margin-left: -490px;
 }
 
-.browsers{ margin-top: 45px; }
-    .browsers ul { list-style: none }
-    .browsers ul li { display: inline-block; margin-right: 35px;}
+.browsers{ width: 480px; margin: 45px auto; }
+    .browsers ul { list-style: none;}
+    .browsers ul li { float: left; margin-right: 35px;}
         .browsers ul li a { color: #b5b0aa; text-decoration: none; display: block; width: 73px; padding-top: 80px; background: url(/media/images/buttons/browsers.png) left top no-repeat;}
             .browsers ul li a.chrome { background-position: 0 0 }
             .browsers ul li a.chrome:hover { background-position: 0 -97px }
