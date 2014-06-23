@@ -17,8 +17,6 @@ class Controller_Template extends Kohana_Controller_Template
         $this->template = "{$this->folder}/{$this->layout}/{$this->file}";
         parent::before();
 
-        $this->showeditor = false; //���� � ������� ��� ���� ���
-
         if ($this->isInformationPage()) {
             $this->setShowRightBlock(false);
         } else {
@@ -52,12 +50,6 @@ class Controller_Template extends Kohana_Controller_Template
                 'media/js/jquery.js',
                 'media/js/scripts.js'
             );
-
-            if ($this->showeditor) {
-                $js[] = 'editors/tinymce/jscripts/tiny_mce/tiny_mce.js';
-                $js[] = 'media/js/editor.js';
-            }
-
             if (Request::current()->is_ajax() === TRUE) {
 //                $this->response->body($this->template->content);
             } else { // ������� ���������� ������������
